@@ -38,8 +38,8 @@ public class RoutingFuncationalities {
     public void close_the_browser() {
         driver.quit();
     }
-    @When("Verify click contact")
-    public void Verify_click_contact() {
+    @When("Verify click on the contact button")
+    public void Verify_click_on_the_contact_button() {
         technicalComponent.display3();
     }
 

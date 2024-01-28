@@ -8,7 +8,7 @@ Feature: Login Routing Funcation
 
   Scenario: Application Contact URl
     Given  Login navigate to The Application
-    When Verify click contact
+    When Verify click  on the contact button
     Then Verify the contact url
     And Close the browser
 
