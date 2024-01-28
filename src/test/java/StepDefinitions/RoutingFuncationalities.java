@@ -17,20 +17,20 @@ public class RoutingFuncationalities {
         driver=new ChromeDriver();
     }
 
-    @Given("I am login to the apllication")
-    public void i_am_login_to_the_apllication() {
-       driver.navigate().to("https://qaroutingtest.ccbp.tech/");
-       driver.manage().window().maximize();
-       technicalComponent=new TechnicalComponent(driver);
+    @Given("Login navigate to The Application")
+    public void login_navigate_to_the_application() {
+        driver.navigate().to("https://qaroutingtest.ccbp.tech/");
+        driver.manage().window().maximize();
+        technicalComponent=new TechnicalComponent(driver);
     }
 
-    @When("I am Click the Navbar application")
-    public void i_am_click_the_navbar_application() {
+    @When("Verify  the Navbar about link")
+    public void Verify_the_Navbar_about_link() {
        technicalComponent.display1();
     }
 
-    @Then("I verify the Url")
-    public void i_verify_the_url() {
+    @Then("verify the Url")
+    public void verify_the_url() {
        technicalComponent.display2();
     }
 
@@ -38,18 +38,18 @@ public class RoutingFuncationalities {
     public void close_the_browser() {
         driver.quit();
     }
-    @When("I am click contact")
-    public void i_am_click_contact() {
+    @When("Verify click contact")
+    public void Verify_click_contact() {
         technicalComponent.display3();
     }
 
-    @Then("I Verify the contact url")
-    public void i_verify_the_contact_url() {
+    @Then("Verify the contact url")
+    public void Verify_the_contact_url() {
         technicalComponent.display4();
     }
 
-    @When("I am about and Home")
-    public void i_am_about_and_home() {
+    @When("Verify click on the button about and Home")
+    public void Verify_click_on_the_button_about_and_Home() {
      technicalComponent.display5();
     }
 
